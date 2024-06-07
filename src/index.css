@@ -1,4 +1,7 @@
 body {
+
+  display: flex;
   background-color: #001f3f;
-  overflow: hidden;
-}
+  overflow: hidden
+};
+

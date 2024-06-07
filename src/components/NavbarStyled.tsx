@@ -16,13 +16,14 @@ export const TextColor = "#ADD8E6";
 
 export const NavbarContainer = styled.nav`
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px 25px;
+  padding: 8px 15px;
   display: flex;
   width: 100%;
+  z-index: 1;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 768px) {
-    padding: 10px 0;
+  @media (max-width: 1024px) {
+    width: 100%;
   }
 `;
 
@@ -36,14 +37,12 @@ export const DivFlexRowLogo = styled(DivFlexRow)`
 `;
 
 export const DivFlexRowLogoContainer = styled(DivFlexRowLogo)`
-  gap: 2rem;
-  padding: 0.5rem 1rem;
   animation: ${flipIn} 1s ease-in-out forwards;
   border: 2px solid #fff;
+  padding-inline: 0.5rem;
+  margin-left: 1rem;
   border-radius: 10rem;
-  @media (max-width: 768px) {
-    padding: 0px 12px;
-    margin-left: 10px;
+  @media (max-width: 1024px) {
   }
 `;
 
@@ -51,9 +50,13 @@ export const NavList = styled.ul`
   list-style: none;
   display: flex;
   margin: 0;
+  margin-right: 2rem;
   padding: 0;
   @media (max-width: 768px) {
     font-size: 0.8rem;
+  }
+  @media (max-width: 1024px) {
+    margin-right: 1.5rem;
   }
 `;
 

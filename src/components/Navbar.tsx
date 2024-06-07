@@ -22,6 +22,7 @@ const Navbar: React.FC = () => {
         </LinkA>
         <Logo>Aleksandar</Logo>
       </DivFlexRowLogo>
+
       <NavList>
         <NavItem>
           <NavLink to="/">Home</NavLink>

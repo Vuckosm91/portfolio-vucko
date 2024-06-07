@@ -9,8 +9,15 @@ export const LayoutWrapper = styled.div`
     transparent 10px,
     transparent 20px
   );
+
   width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 480px) {
+  }
+
+  @media (min-width: 481px) and (max-width: 768px) {
+  }
 `;
