@@ -18,8 +18,12 @@ export const NavbarContainer = styled.nav`
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px 25px;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 768px) {
+    padding: 10px 0;
+  }
 `;
 
 export const DivFlexRow = styled.div`
@@ -37,6 +41,10 @@ export const DivFlexRowLogoContainer = styled(DivFlexRowLogo)`
   animation: ${flipIn} 1s ease-in-out forwards;
   border: 2px solid #fff;
   border-radius: 10rem;
+  @media (max-width: 768px) {
+    padding: 0px 12px;
+    margin-left: 10px;
+  }
 `;
 
 export const NavList = styled.ul`
@@ -44,6 +52,9 @@ export const NavList = styled.ul`
   display: flex;
   margin: 0;
   padding: 0;
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const NavItem = styled.li`
@@ -72,6 +83,9 @@ export const Logo = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const LetterStyled = styled.h1`

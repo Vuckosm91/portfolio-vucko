@@ -27,6 +27,10 @@ const fadeInLeft = keyframes`
 export const PageWrapper = styled.div`
   display: flex;
   height: 100vh;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
 
 export const DivFlexColumn = styled.div`
@@ -43,6 +47,14 @@ export const DivRowHalf = styled(DivFlexColumn)`
   padding-top: 10rem;
   padding-left: 5rem;
   padding-right: 5rem;
+  @media (max-width: 768px) {
+    width: auto;
+    height: auto;
+    padding-top: 2rem;
+    padding-left: 0.2rem;
+    padding-right: 0;
+    margin-inline: 1rem;
+  }
 `;
 
 export const DivRowHalfImage = styled.div`
@@ -53,6 +65,10 @@ export const DivRowHalfImage = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 300px; /* ili neka druga visina koja odgovara */
+  }
 `;
 
 export const TextStyledItalicL = styled.h1`
@@ -62,7 +78,11 @@ export const TextStyledItalicL = styled.h1`
   font-weight: 600;
   font-family: "Georgia", serif;
   font-style: italic;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* X-offset, Y-offset, blur, boja */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
 `;
 
 export const TextStyledL = styled.h1`
@@ -71,13 +91,17 @@ export const TextStyledL = styled.h1`
   font-size: 2rem;
   font-family: "Georgia", serif;
   font-weight: 600;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* X-offset, Y-offset, blur, boja */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    margin-left: 0;
+  }
 `;
 
 export const TextStyledItalicM = styled(TextStyledItalicL)`
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 `;
 
 export const TextStyledM = styled(TextStyledL)`
-  font-size: 1.8rem;
+  font-size: 1.2rem;
 `;
