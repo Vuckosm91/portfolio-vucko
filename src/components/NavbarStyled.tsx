@@ -22,7 +22,7 @@ justify-content: center;
 align-items: center;
 
 @media (max-width: 600px) {
-  width: 98%;
+  width: 100%;
 }
 `;
 
@@ -43,7 +43,7 @@ export const NavbarContainer = styled.nav`
   }
 
   @media (max-width: 600px) {
-    width: 94%;
+    width: 88%;
   }
 `;
 
