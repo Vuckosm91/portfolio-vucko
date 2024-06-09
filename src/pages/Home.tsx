@@ -3,6 +3,7 @@ import {
   DivFlexTextContainer,
   DivRowHalf,
   DivRowHalfImage,
+  LinkToWeb,
   PageWrapper,
   TextStyledM,
   TextStyled_L_Italic,
@@ -28,8 +29,12 @@ const Home = () => {
             started working with ReactTS. <br /> <br />
             <IconContainer />
             <br /> By the end of 2022, I began my professional career as a
-            ReactTS developer with DeltaDigit LLC, a company based in Novi Sad,
-            Serbia, where I currently work remotely on a part-time basis. <br />
+            ReactTS developer with{"  "}
+            <LinkToWeb href="https://www.deltadigit.rs/" target="_blank">
+              DeltaDigit LLC
+            </LinkToWeb>
+            , a company based in Novi Sad, Serbia, where I currently work
+            remotely on a part-time basis. <br />
             <br /> On this page, you can also find a section dedicated to my
             projects, where you can view a demo application built with React.
             The project includes a detailed description of all the technologies

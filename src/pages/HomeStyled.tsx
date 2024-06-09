@@ -130,3 +130,7 @@ export const TextStyledL = styled.h1`
 export const TextStyled_L_Italic = styled(TextStyledL)`
   font-style: italic;
 `;
+
+export const LinkToWeb = styled.a`
+  color: #25cfdb;
+`;
