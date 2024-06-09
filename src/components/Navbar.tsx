@@ -4,7 +4,6 @@ import {
   DivFlexRowLogoContainer,
   LetterStyled,
   LinkA,
-  Logo,
   NavItem,
   NavLink,
   NavList,
@@ -20,7 +19,6 @@ const Navbar: React.FC = () => {
             <LetterStyled>A</LetterStyled>
           </DivFlexRowLogoContainer>
         </LinkA>
-        <Logo>Aleksandar</Logo>
       </DivFlexRowLogo>
 
       <NavList>

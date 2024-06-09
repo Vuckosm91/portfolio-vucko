@@ -4,8 +4,8 @@ export const LayoutWrapper = styled.div`
   background-color: #010224;
   background-image: repeating-linear-gradient(
     45deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.1) 10px,
+    #010342,
+    #010342 10px,
     transparent 10px,
     transparent 20px
   );
@@ -14,10 +14,4 @@ export const LayoutWrapper = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
-  @media (max-width: 480px) {
-  }
-
-  @media (min-width: 481px) and (max-width: 768px) {
-  }
 `;

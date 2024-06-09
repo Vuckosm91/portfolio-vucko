@@ -15,16 +15,13 @@ const flipIn = keyframes`
 export const TextColor = "#ADD8E6";
 
 export const NavbarContainer = styled.nav`
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #6216f0;
   padding: 8px 15px;
   display: flex;
   width: 100%;
   z-index: 1;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 1024px) {
-    width: 100%;
-  }
 `;
 
 export const DivFlexRow = styled.div`
@@ -42,8 +39,6 @@ export const DivFlexRowLogoContainer = styled(DivFlexRowLogo)`
   padding-inline: 0.5rem;
   margin-left: 1rem;
   border-radius: 10rem;
-  @media (max-width: 1024px) {
-  }
 `;
 
 export const NavList = styled.ul`
@@ -52,12 +47,6 @@ export const NavList = styled.ul`
   margin: 0;
   margin-right: 2rem;
   padding: 0;
-  @media (max-width: 768px) {
-    font-size: 0.8rem;
-  }
-  @media (max-width: 1024px) {
-    margin-right: 1.5rem;
-  }
 `;
 
 export const NavItem = styled.li`
@@ -86,9 +75,6 @@ export const Logo = styled.div`
   font-size: 1.5rem;
   font-weight: bold;
   font-style: italic;
-  @media (max-width: 768px) {
-    display: none;
-  }
 `;
 
 export const LetterStyled = styled.h1`
@@ -96,4 +82,8 @@ export const LetterStyled = styled.h1`
   margin: 0;
   font-size: 1.8rem;
   font-family: "Montserrat", sans-serif;
+   transition: transform 0.8s ease-in-out;
+
+   &:hover {
+    transform: rotate(360deg);
 `;

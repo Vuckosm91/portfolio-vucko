@@ -26,13 +26,9 @@ const fadeInLeft = keyframes`
 
 export const PageWrapper = styled.div`
   display: flex;
-  height: 100vh;
+  height: auto;
   gap: 1rem;
   overflow: hidden;
-  @media (max-width: 1248px) {
-    flex-direction: column;
-    height: auto;
-  }
 `;
 
 export const DivFlexColumn = styled.div`
@@ -45,52 +41,51 @@ export const DivRowHalf = styled(DivFlexColumn)`
   justify-content: Start;
   width: 65%;
   height: 100%;
-  padding: 4rem;
+
   animation: ${fadeInLeft} 1s ease-in-out forwards;
 
-  @media (max-width: 768px) {
+  @media (min-width: 1081px) and (max-width: 1599px) {
+    justify-content: center;
     width: 100%;
-    height: auto;
   }
 
-  @media (max-width: 1024px) {
-    width: 80%;
-    height: 100%;
-    padding-top: 2rem;
+  @media (max-width: 1080px) {
+    width: 90%;
+    align-items: center;
+  }
+  @media (min-width: 1600px) {
+    align-items: center;
   }
 `;
 
 export const DivFlexTextContainer = styled(DivFlexColumn)`
   display: flex;
-  width: 100%;
+  width: 90%;
+  height: auto;
   align-items: start;
 
-  @media (max-width: 768px) {
+  @media (min-width: 1081px) and (max-width: 1599px) {
+    padding: 2rem;
     width: 90%;
-    height: auto;
   }
 
-  @media (min-width: 481px) and (max-width: 768px) {
+  @media (min-width: 1600px) {
+    padding: 2rem;
+    width: 80%;
   }
 `;
 
 export const DivRowHalfImage = styled.div`
   display: flex;
   width: 30%;
-  height: 80%;
+  height: 80vh;
   animation: ${fadeInRight} 1s ease-in-out forwards;
   background-image: url(${backgroundImage});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  @media (max-width: 768px) {
-    width: 100%;
-    height: 600px;
-  }
-  @media (max-width: 1248px) {
-    width: 80%;
-    height: 600px;
-    margin-top: 12rem;
+  @media (max-width: 1599px) {
+    display: none;
   }
 `;
 
@@ -98,16 +93,18 @@ export const TextStyledM = styled.h1`
   color: ${TextColor};
   font-size: 1.5rem;
   line-height: 1.9rem;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Georgia", serif;
   font-style: italic;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
   @media (max-width: 768px) {
-    font-size: 1.2rem;
-    margin-left: 1rem;
+    font-size: 1rem;
+    padding-bottom: 2rem;
   }
-  @media (min-width: 769px) and (max-width: 1024px) {
-    font-size: 1.6rem;
+
+  @media (min-width: 1600px) {
+    font-weight: 600;
   }
 `;
 
@@ -119,10 +116,14 @@ export const TextStyledL = styled.h1`
   color: ${TextColor};
   font-size: 3rem;
   font-family: "Georgia", serif;
-  font-weight: 600;
+  font-weight: 500;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  @media (min-width: 1600px) {
+    font-weight: 600;
+  }
+
   @media (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 `;
 
