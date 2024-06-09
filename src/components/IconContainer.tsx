@@ -8,6 +8,7 @@ import {
   SiGit,
   SiBootstrap,
   SiMui,
+  SiChakraui,
 } from "@icons-pack/react-simple-icons";
 import {
   StyledIconHTML,
@@ -20,6 +21,7 @@ import {
   IconContainerWrap,
   StyledIconBootstrap,
   StyledIconMui,
+  StyledIconChakra,
 } from "./IconContainerStyled";
 
 const IconContainer = () => {
@@ -46,6 +48,9 @@ const IconContainer = () => {
       <StyledIconMui>
         <SiMui />
       </StyledIconMui>
+      <StyledIconChakra>
+        <SiChakraui />
+      </StyledIconChakra>
       <StyledIconMySql>
         <SiMysql />
       </StyledIconMySql>

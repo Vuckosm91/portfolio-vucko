@@ -118,3 +118,15 @@ export const StyledIconMui = styled.div`
     }
   }
 `;
+
+export const StyledIconChakra = styled.div`
+  margin: 10px;
+  svg {
+    width: 32px;
+    height: 32px;
+    fill: #02bfa3; /* Prilagodi boju po potrebi */
+    &:hover {
+      fill: #f06529; /* Hover boja */
+    }
+  }
+`;
