@@ -6,6 +6,8 @@ import {
   SiReact,
   SiMysql,
   SiGit,
+  SiBootstrap,
+  SiMui,
 } from "@icons-pack/react-simple-icons";
 import {
   StyledIconHTML,
@@ -16,6 +18,8 @@ import {
   StyledIconMySql,
   StyledIconGit,
   IconContainerWrap,
+  StyledIconBootstrap,
+  StyledIconMui,
 } from "./IconContainerStyled";
 
 const IconContainer = () => {
@@ -27,6 +31,9 @@ const IconContainer = () => {
       <StyledIconCss>
         <SiCss3 />
       </StyledIconCss>
+      <StyledIconBootstrap>
+        <SiBootstrap />
+      </StyledIconBootstrap>
       <StyledIconJs>
         <SiJavascript />
       </StyledIconJs>
@@ -36,6 +43,9 @@ const IconContainer = () => {
       <StyledIconReact>
         <SiReact />
       </StyledIconReact>
+      <StyledIconMui>
+        <SiMui />
+      </StyledIconMui>
       <StyledIconMySql>
         <SiMysql />
       </StyledIconMySql>

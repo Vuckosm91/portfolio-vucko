@@ -95,3 +95,26 @@ export const StyledIconGit = styled.div`
     }
   }
 `;
+export const StyledIconBootstrap = styled.div`
+  margin: 10px;
+  svg {
+    width: 32px;
+    height: 32px;
+    fill: #7d02bf; /* Prilagodi boju po potrebi */
+    &:hover {
+      fill: #f06529; /* Hover boja */
+    }
+  }
+`;
+
+export const StyledIconMui = styled.div`
+  margin: 10px;
+  svg {
+    width: 32px;
+    height: 32px;
+    fill: #0244bf; /* Prilagodi boju po potrebi */
+    &:hover {
+      fill: #f06529; /* Hover boja */
+    }
+  }
+`;
