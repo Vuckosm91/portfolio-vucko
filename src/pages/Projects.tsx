@@ -1,5 +1,7 @@
+import { ProjectPageWrapp } from "./ProjectsStyled";
+
 const Projects = () => {
-  return <div>Projects</div>;
+  return <ProjectPageWrapp></ProjectPageWrapp>;
 };
 
 export default Projects;

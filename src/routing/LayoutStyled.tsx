@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const LayoutWrapper = styled.div`
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   background-color: #010242;
   background-image: repeating-linear-gradient(
       45deg,
@@ -16,8 +20,4 @@ export const LayoutWrapper = styled.div`
       transparent 10px,
       transparent 30px
     );
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
 `;
