@@ -26,6 +26,7 @@ const fadeInLeft = keyframes`
 
 export const PageWrapper = styled.div`
   display: flex;
+  width: 100%;
   height: auto;
   gap: 1rem;
   overflow: hidden;
@@ -94,7 +95,7 @@ export const TextStyledM = styled.h1`
   font-size: 1.5rem;
   line-height: 1.9rem;
   font-weight: 500;
-  font-family: "Georgia", serif;
+  font-family: "Roboto", sans-serif;
   font-style: italic;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
@@ -115,7 +116,7 @@ export const TextStyled_M_Italic = styled(TextStyledM)`
 export const TextStyledL = styled.h1`
   color: ${TextColor};
   font-size: 3rem;
-  font-family: "Georgia", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   @media (min-width: 1600px) {

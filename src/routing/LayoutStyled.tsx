@@ -1,15 +1,21 @@
 import styled from "styled-components";
 
 export const LayoutWrapper = styled.div`
-  background-color: #010224;
+  background-color: #010242;
   background-image: repeating-linear-gradient(
-    45deg,
-    #010342,
-    #010342 10px,
-    transparent 10px,
-    transparent 20px
-  );
-
+      45deg,
+      #01022e,
+      #01022e 10px,
+      transparent 30px,
+      transparent 20px
+    ),
+    repeating-linear-gradient(
+      135deg,
+      #01022e,
+      #01022e 10px,
+      transparent 10px,
+      transparent 30px
+    );
   width: 100%;
   min-height: 100vh;
   display: flex;

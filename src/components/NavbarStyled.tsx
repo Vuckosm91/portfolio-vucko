@@ -14,14 +14,33 @@ const flipIn = keyframes`
 
 export const TextColor = "#ADD8E6";
 
+export const NavbarWrapper = styled.div`
+display: flex;
+width: 100%
+height: auto;
+justify-content: center;
+align-items: center;
+`;
+
 export const NavbarContainer = styled.nav`
-  background-color: #6216f0;
+  background-color: #1a012e;
+  border: 2px solid #0b3f42;
+  border-radius: 1rem;
   padding: 8px 15px;
+  margin-top: 1rem;
   display: flex;
-  width: 100%;
+  width: 50%;
   z-index: 1;
   justify-content: space-between;
   align-items: center;
+  transition: 0.3s ease-in;
+  &:hover {
+    border: 2px solid #25cfdb;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 export const DivFlexRow = styled.div`
