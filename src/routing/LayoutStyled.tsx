@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const LayoutWrapper = styled.div`
+  display: flex;
   width: 100vw;
   min-height: 100vh;
-  display: flex;
+  margin: 0;
   flex-direction: column;
   background-color: #010242;
   background-image: repeating-linear-gradient(
