@@ -1,8 +1,7 @@
-import { LinkToWeb, TextStyledM } from "./HomeStyled";
 import image from "../images/games-platform.png";
+import { LinkToWeb, TextStyledM } from "./HomeStyled";
 
 import {
-  GamePlatformPic,
   GamePlatformPicText,
   GamePlatformPicWrapper,
   GamePlatformText,
