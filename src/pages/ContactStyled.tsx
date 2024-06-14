@@ -126,3 +126,12 @@ export const LinkDownload = styled.a`
   color: cyan;
   font-size: 1.7rem;
 `;
+
+export const ContactIconContainerWrap = styled.div`
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+`;

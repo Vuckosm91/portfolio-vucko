@@ -6,6 +6,7 @@ import {
 } from "@icons-pack/react-simple-icons";
 import ContactForm from "./ContactForm";
 import {
+  ContactIconContainerWrap,
   ContactPagePhoto,
   ContactPageSocial,
   ContactPageWrapp,
@@ -26,7 +27,7 @@ const Contact = () => {
           <ContactTextL>Contact Me</ContactTextL>
           <ContactTextM>I'll be glad to hear from You</ContactTextM>
           <ContactForm />
-          <IconContainerWrap>
+          <ContactIconContainerWrap>
             <LinkA
               to="https://www.facebook.com/share/dVg3aW9QaW7VY1DS/"
               target="blank"
@@ -51,7 +52,7 @@ const Contact = () => {
             >
               <SiLinkedin color="cyan" cursor="pointer" />
             </LinkA>
-          </IconContainerWrap>
+          </ContactIconContainerWrap>
           <ContactTextM>
             You can also download my CV{" "}
             <LinkDownload href={cv} download="Aleksandar_Vuckovic.pdf">
