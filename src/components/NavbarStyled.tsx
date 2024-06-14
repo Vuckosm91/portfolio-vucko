@@ -55,7 +55,6 @@ export const DivFlexRow = styled.div`
 export const DivFlexRowLogo = styled(DivFlexRow)`
   align-items: center;
   border-radius: 10rem;
-  border: 1px solid red;
 `;
 
 export const DivFlexRowLogoContainer = styled(DivFlexRowLogo)`
