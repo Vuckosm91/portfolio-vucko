@@ -4,6 +4,8 @@ import {
   SiInstagram,
   SiLinkedin,
 } from "@icons-pack/react-simple-icons";
+import { LinkA } from "../components/NavbarStyled";
+import cv from "../cv/Aleksandar_Vuckovic.pdf";
 import ContactForm from "./ContactForm";
 import {
   ContactIconContainerWrap,
@@ -14,9 +16,6 @@ import {
   ContactTextM,
   LinkDownload,
 } from "./ContactStyled";
-import { IconContainerWrap } from "../components/IconContainerStyled";
-import { LinkA } from "../components/NavbarStyled";
-import cv from "../cv/Aleksandar_Vuckovic.pdf";
 
 const Contact = () => {
   return (
