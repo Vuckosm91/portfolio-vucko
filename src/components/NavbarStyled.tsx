@@ -100,6 +100,7 @@ export const NavLink = styled(Link)`
 export const LinkA = styled(Link)`
   text-decoration: none;
   cursor: pointer;
+  border-radius: 10rem;
 `;
 
 export const Logo = styled.div`
