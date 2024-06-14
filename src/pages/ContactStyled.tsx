@@ -1,37 +1,53 @@
 import styled from "styled-components";
-import image from "../images/238016289_10223445002491475_266834550084840426_n.jpg";
+import image from "../images/WhatsApp Image 2024-06-14 at 04.23.22_f8500829.jpg";
 
 export const ContactPageWrapp = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 90%;
-  min-height: 100vh;
-  border: 2px solid red;
+  margin-top: 3rem;
   align-self: center;
 `;
 
 export const ContactPagePhoto = styled.div`
   width: 30%;
   height: 500px;
-  border: 2px solid green;
+  border: 2px solid #fff;
+  border-radius: 5px;
   background: url(${image});
   background-size: cover;
   background-position: center;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const ContactPageSocial = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   width: 60%;
-  height: 500px;
-  border: 2px solid yellow;
+  height: 600px;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 `;
 
 /* FORM */
 
 export const ContactTextL = styled.h2`
   color: #fff;
+  margin: 0;
+`;
+
+export const ContactTextM = styled.h3`
+  color: #fff;
+  margin: 0;
+  text-align: center;
 `;
 
 export const Form = styled.form`
@@ -43,10 +59,18 @@ export const Form = styled.form`
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #131036;
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+
+  @media (max-width: 425px) {
+    width: 80%;
+  }
 `;
 
 export const Label = styled.label`
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
   font-weight: bold;
   color: #fff;
 `;
@@ -95,4 +119,10 @@ export const ButtonContact = styled.button`
   &:hover {
     background-color: #0056b3;
   }
+`;
+
+export const LinkDownload = styled.a`
+  margin-inline: 0.3rem;
+  color: cyan;
+  font-size: 1.7rem;
 `;

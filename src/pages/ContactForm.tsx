@@ -30,11 +30,21 @@ const ContactForm = () => {
   return (
     <Form ref={form} onSubmit={sendEmail}>
       <Label>Name</Label>
-      <Input type="text" name="user_name" required />
+      <Input
+        type="text"
+        name="user_name"
+        placeholder="Enter Your Name"
+        required
+      />
       <Label>Email</Label>
-      <Input type="email" name="user_email" required />
+      <Input
+        type="email"
+        name="user_email"
+        placeholder="Enter Your Email"
+        required
+      />
       <Label>Message</Label>
-      <Textarea name="message" required />
+      <Textarea name="message" placeholder="Write me a message" required />
       <ButtonContact type="submit">Send</ButtonContact>
     </Form>
   );
