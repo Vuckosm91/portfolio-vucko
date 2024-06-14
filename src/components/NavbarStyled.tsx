@@ -54,6 +54,8 @@ export const DivFlexRow = styled.div`
 
 export const DivFlexRowLogo = styled(DivFlexRow)`
   align-items: center;
+  border-radius: 10rem;
+  border: 1px solid red;
 `;
 
 export const DivFlexRowLogoContainer = styled(DivFlexRowLogo)`
@@ -62,6 +64,10 @@ export const DivFlexRowLogoContainer = styled(DivFlexRowLogo)`
   padding-inline: 0.5rem;
   margin-left: 1rem;
   border-radius: 10rem;
+
+  @media (max-width: 600px) {
+    margin-left: 0;
+  }
 `;
 
 export const NavList = styled.ul`
@@ -70,6 +76,10 @@ export const NavList = styled.ul`
   margin: 0;
   margin-right: 2rem;
   padding: 0;
+
+  @media (max-width: 600px) {
+    margin-right: 0;
+  }
 `;
 
 export const NavItem = styled.li`
