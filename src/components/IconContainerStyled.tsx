@@ -6,7 +6,6 @@ export const IconContainerWrap = styled.div`
   gap: 2rem;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 
   @media (max-width: 768px) {
     display: grid;
@@ -15,7 +14,6 @@ export const IconContainerWrap = styled.div`
     grid-gap: 20px; /* Razmak između elemenata */
     justify-items: center;
     align-items: center;
-    height: 4rem;
   }
 `;
 

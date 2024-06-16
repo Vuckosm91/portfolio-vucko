@@ -26,6 +26,7 @@ const fadeInLeft = keyframes`
 
 export const PageWrapper = styled.div`
   display: flex;
+  justify-content: center;
   width: 100%;
   height: auto;
   gap: 1rem;
@@ -54,8 +55,16 @@ export const DivRowHalf = styled(DivFlexColumn)`
     width: 90%;
     align-items: center;
   }
+
   @media (min-width: 1600px) {
     align-items: center;
+  }
+
+  @media (max-width: 425px) {
+    width: 90%;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
   }
 `;
 
