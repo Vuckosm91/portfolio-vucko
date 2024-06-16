@@ -143,4 +143,13 @@ export const TextStyled_L_Italic = styled(TextStyledL)`
 
 export const LinkToWeb = styled.a`
   color: #25cfdb;
+  margin-left: 0.5rem;
+`;
+
+export const LinkToApp = styled.a`
+  color: #25cfdb;
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 2rem;
 `;

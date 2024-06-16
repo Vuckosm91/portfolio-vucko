@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import image from "../images/games-platform.png";
-import { LinkToWeb, TextStyledM } from "./HomeStyled";
+import { LinkToApp, TextStyledM } from "./HomeStyled";
 
 import {
   GamePlatformPicText,
@@ -18,15 +18,14 @@ const Projects = () => {
     <ProjectPageWrapp>
       <GamePlatformText>
         <TextStyledM>{t("projectHeadline")}</TextStyledM>
-        <TextStyledM>
-          {t("projectDescription")}
-          <LinkToWeb
-            href="https://game-hub-ruby-iota.vercel.app/"
-            target="blank"
-          >
-            {t("demoTry")}
-          </LinkToWeb>
-        </TextStyledM>
+        <TextStyledM>{t("projectDescription1")}</TextStyledM>
+        <TextStyledM>{t("projectDescription2")}</TextStyledM>
+        <TextStyledM>{t("projectDescription3")}</TextStyledM>
+        <TextStyledM>{t("projectDescription4")}</TextStyledM>
+        <TextStyledM>{t("projectDescription5")}</TextStyledM>
+        <LinkToApp href="https://game-hub-ruby-iota.vercel.app/" target="blank">
+          {t("demoTry")}
+        </LinkToApp>
       </GamePlatformText>
       <GamePlatformPicWrapper>
         <img src={image} />
