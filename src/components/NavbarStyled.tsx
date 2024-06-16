@@ -27,12 +27,12 @@ align-items: center;
 `;
 
 export const NavbarContainer = styled.nav`
+  display: flex;
   background-color: #1a012e;
   border: 2px solid #0b3f42;
   border-radius: 1rem;
   padding: 8px 15px;
   margin-top: 1rem;
-  display: flex;
   width: 50%;
   z-index: 1;
   justify-content: space-between;
@@ -47,12 +47,29 @@ export const NavbarContainer = styled.nav`
   }
 `;
 
+export const DivFlexColumn = styled.div`
+  display: flex;
+  flex-direction: Column;
+`;
+
 export const DivFlexRow = styled.div`
   display: flex;
   flex-direction: row;
 `;
 
+export const DivFlexRowLng = styled(DivFlexRow)`
+  justify-content: end;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  gap: 1rem;
+`;
+
 export const DivFlexRowLogo = styled(DivFlexRow)`
+  align-items: center;
+  border-radius: 10rem;
+`;
+
+export const DivFlexColumnLogo = styled(DivFlexColumn)`
   align-items: center;
   border-radius: 10rem;
 `;
@@ -119,4 +136,15 @@ export const LetterStyled = styled.h1`
 
    &:hover {
     transform: rotate(360deg);
+`;
+
+export const DivFlag = styled.div`
+  border: 2px solid #fff;
+  width: 2rem;
+  height: 1.5rem;
+  cursor: pointer;
+
+   &:hover {
+      border: 2px solid  #ffd700;
+
 `;

@@ -1,6 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import {
-  DivFlexRowLogo,
+  DivFlag,
+  DivFlexColumn,
+  DivFlexColumnLogo,
+  DivFlexRowLng,
   DivFlexRowLogoContainer,
   LetterStyled,
   LinkA,
@@ -12,28 +16,46 @@ import {
 } from "./NavbarStyled";
 
 const Navbar: React.FC = () => {
+  const { i18n } = useTranslation();
+  const changeLanguage = (lng: any) => {
+    i18n.changeLanguage(lng);
+  };
+
   return (
     <NavbarWrapper>
       <NavbarContainer>
-        <DivFlexRowLogo>
+        <DivFlexColumnLogo>
           <LinkA to={"/"}>
             <DivFlexRowLogoContainer>
               <LetterStyled>A</LetterStyled>
             </DivFlexRowLogoContainer>
           </LinkA>
-        </DivFlexRowLogo>
+        </DivFlexColumnLogo>
 
-        <NavList>
-          <NavItem>
-            <NavLink to="/">Home</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/projects">Projects</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/contact">Contact</NavLink>
-          </NavItem>
-        </NavList>
+        <DivFlexColumn>
+          <DivFlexRowLng>
+            <DivFlag
+              className="flag-icon flag-icon-gb"
+              onClick={() => changeLanguage("en")}
+            />
+
+            <DivFlag
+              className="flag-icon flag-icon-de"
+              onClick={() => changeLanguage("de")}
+            />
+          </DivFlexRowLng>
+          <NavList>
+            <NavItem>
+              <NavLink to="/">Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/projects">Projects</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/contact">Contact</NavLink>
+            </NavItem>
+          </NavList>
+        </DivFlexColumn>
       </NavbarContainer>
     </NavbarWrapper>
   );

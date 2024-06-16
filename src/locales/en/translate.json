@@ -1,0 +1,14 @@
+{
+    "welcome": "Hi, I'm Aleksandar",
+    "welcome2": "A React Developer & Design Enthusiast",
+    "about1": "My name is Aleksandar Vuckovic, and I have been living in Munich since 2016. I embarked on my journey into frontend development in 2019, starting with learning HTML and CSS. With the help of Bootstrap, I began creating web pages and then proceeded to learn JavaScript. ",
+    "about2": "I attended IT Academy, where I revisited the fundamentals of HTML, CSS, and JavaScript, and learned how to create databases using Wamp server, as well as performing queries on those databases. After completing the course, I continued to advance my skills independently, learning TypeScript, and soon after, I started working with ReactTS.",
+    "about3": "By the end of 2022, I began my professional career as a ReactTS developer with",
+    "about4": " einem Unternehmen mit Sitz in Novi Sad, Serbien, wo ich derzeit remote in Teilzeit arbeite.",
+    "about5": " Auf dieser Seite finden Sie auch einen Abschnitt, der meinen Projekten gewidmet ist, in dem Sie eine Demo-Anwendung sehen können, die mit React erstellt wurde. Das Projekt enthält eine detaillierte Beschreibung aller Technologien und Werkzeuge, die bei der Entwicklung verwendet wurden. Dieser Abschnitt soll ein umfassendes Verständnis meiner Fähigkeiten und meines Fachwissens in der Erstellung moderner, responsiver Webanwendungen vermitteln.",
+    "projectHeadline" : "Project Description",
+    "projectDescription": "This project is a comprehensive gaming platform where users can explore a wide variety of games fetched from a backend server. The platform provides robust filtering options allowing users to sort games by genre, platform, release year, title, and relevance. Additionally, users can search for specific game titles. Each game listed on the platform comes with detailed information including an average rating, supported platforms, and publisher details. When a user selects a game, they are taken to a dedicated page for that game, featuring a detailed description, screenshots, and a trailer (if available from the backend). This platform aims to enhance the gaming discovery experience by providing intuitive and user-friendly navigation and search capabilities, ensuring that users can find and learn about games that match their interests.",
+    "demoTry": "Try demo here",
+    "isUsed": "What was used making this app:"
+
+}

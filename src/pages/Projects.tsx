@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import image from "../images/games-platform.png";
 import { LinkToWeb, TextStyledM } from "./HomeStyled";
 
@@ -11,38 +12,26 @@ import {
 } from "./ProjectsStyled";
 
 const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <ProjectPageWrapp>
       <GamePlatformText>
-        <TextStyledM>Project Description</TextStyledM>
+        <TextStyledM>{t("projectHeadline")}</TextStyledM>
         <TextStyledM>
-          This project is a comprehensive gaming platform where users can
-          explore a wide variety of games fetched from a backend server. The
-          platform provides robust filtering options allowing users to sort
-          games by genre, platform, release year, title, and relevance.
-          Additionally, users can search for specific game titles. Each game
-          listed on the platform comes with detailed information including an
-          average rating, supported platforms, and publisher details. When a
-          user selects a game, they are taken to a dedicated page for that game,
-          featuring a detailed description, screenshots, and a trailer (if
-          available from the backend). This platform aims to enhance the gaming
-          discovery experience by providing intuitive and user-friendly
-          navigation and search capabilities, ensuring that users can find and
-          learn about games that match their interests.
-          <br />
-          <br />
+          {t("projectDescription")}
           <LinkToWeb
             href="https://game-hub-ruby-iota.vercel.app/"
             target="blank"
           >
-            Try demo here
+            {t("demoTry")}
           </LinkToWeb>
         </TextStyledM>
       </GamePlatformText>
       <GamePlatformPicWrapper>
         <img src={image} />
         <GamePlatformPicText>
-          <TextStyledM>What was used making this app:</TextStyledM>
+          <TextStyledM>{t("isUsed")}</TextStyledM>
           <StyledList>
             <ListItem>TSX (TypeScript XML)</ListItem>
             <ListItem>CSS</ListItem>
